@@ -10,13 +10,13 @@ jobs:
     - name: HOLA MUNDO
       run: echo "Hola Mundo" 
     
-    -name: touch file
+    - name: touch file
      run: touch hola.txt 
 
-    -name: set text
+    - name: set text
      run: echo "PRUEBA 2" >> hola.txt 
 
-    -name: Read file
+    - name: Read file
      run: cat hola.txt
 
   otro:
