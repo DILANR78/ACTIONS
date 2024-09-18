@@ -9,3 +9,7 @@ jobs:
     steps:
     - name: HOLA MUNDO
       run: echo "Hola Mundo" 
+
+    otro:
+    - name: LS
+      run: ls -al
