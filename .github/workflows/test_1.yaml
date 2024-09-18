@@ -10,6 +10,9 @@ jobs:
     - name: HOLA MUNDO
       run: echo "Hola Mundo" 
 
-    otro:
+  otro:
+    runs-on: ubuntu-latest
+
+    steps: 
     - name: LS
       run: ls -al
