@@ -13,7 +13,7 @@ jobs:
     - name: touch file
      run: touch hola.txt 
 
-    - name: set text
+    - name: Set text
      run: echo "PRUEBA 2" >> hola.txt 
 
     - name: Read file
