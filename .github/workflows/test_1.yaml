@@ -1,11 +1,11 @@
-titulo: HOLA MUNDO
+name: HOLA MUNDO
 
 on: [push]
 
 jobs: 
   hola:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Hola Mundo
-      run: echo "Hola Mundo dd...." 
+    - name: HOLA MUNDO
+      run: echo "Hola Mundo dddddd...." 
