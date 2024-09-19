@@ -1,3 +1,4 @@
-sudo apt-get update
-
-sudo apt-get install curl
+touch script.txt
+echo "HOLA MUNDO" >> script.txt
+cat script.txt
+rm script.txt
