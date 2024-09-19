@@ -1,4 +1,4 @@
-name: Instalación de servicios
+name: SSH
 
 on: [push]
 
