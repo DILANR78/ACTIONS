@@ -3,7 +3,7 @@ name: NODEJS
 on: [push]
 
 jobs:
-  checkout:
+  others:
     runs-on: ubuntu-lastest
     steps:
     - name: Setup Node.js environment
