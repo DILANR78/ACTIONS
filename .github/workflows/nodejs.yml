@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v4.1.7
 
       - name: DDDD
-        uses: ../.github/actions/my-action
+        uses: ./.github/actions/my-action
