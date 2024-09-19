@@ -1,16 +1,13 @@
-name: Test_dos
+name: Test_Mas
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
-  test_build:
-    runs-on: ubuntu-latest
+  test-build:
+    runs-on: ubuntu-lastest
 
     steps:
       - name: ls
         run: |
-            echo "HOLA MUNDO" >> hola.txt
-            apt-get intall ngnx curl
+          echo "HOLA MUNDOTE" >> hola.txt
+          cat hola.txt
