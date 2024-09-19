@@ -7,18 +7,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4.1.7
 
-      - name: Enlistar
-        uses: ls -al  
-  
+      - name: List files
+        run: ls -al
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.3
         with:
           node-version: latest
 
-      - name: Node version
+      - name: Print Node.js version
         run: node --version
-      
     
