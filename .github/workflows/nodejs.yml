@@ -10,5 +10,5 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4.1.7
 
-      - name: Checkout repository
+      - name: DDDD
         uses: ../.github/actions/my-action
