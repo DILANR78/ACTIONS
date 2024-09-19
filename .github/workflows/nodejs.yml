@@ -15,12 +15,10 @@ jobs:
   
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.3
-        witch:
+        with:
           node-version: latest
 
       - name: Node version
         run: node --version
       
-      - name: Instalar Pedendencias
-        run: npm install
     
