@@ -20,4 +20,12 @@ jobs:
 
       - name: Print Node.js version
         run: node --version
+
+      - name: PHP
+        uses: shivammathur/setup-php@v2
+        witch:
+          php-version: '8.3'
+      
+      - name: php version
+        run: php --version
     
