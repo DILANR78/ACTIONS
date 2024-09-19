@@ -7,9 +7,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+
+      - name: Enlistar
+        uses: ls -al  
+  
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.3
+        witch:
+          node-version: latest
 
       - name: Node version
         run: node --version
+      
+      - name: Instalar Pedendencias
+        run: npm install
     
