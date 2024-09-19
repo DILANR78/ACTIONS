@@ -4,8 +4,7 @@ description: "Test my action"
 runs:
   using: "composite"
 
-    steps:
-      - name: hola mundo 
-        run: echo "HOLA MUNDO"
-        shell: bash
-        
+  steps:
+    - name: Hola Mundo
+      run: echo "HOLA MUNDO"
+      shell: bash
