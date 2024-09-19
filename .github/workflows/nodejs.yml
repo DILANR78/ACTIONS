@@ -23,7 +23,7 @@ jobs:
 
       - name: PHP
         uses: shivammathur/setup-php@v2
-        witch:
+        with:
           php-version: '8.3'
       
       - name: php version
