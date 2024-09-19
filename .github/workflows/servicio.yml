@@ -6,9 +6,12 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
 
-    env:
-      MY_VAR: Mi variable de entorno
-
     steps:
-      - name: Test
-        run: echo "Valor:$MY_VAR"
+      - name: SSH_KEY
+        run: |
+          mkdir -p ~/.ssh
+          echo *${{ secrets.SSH_KEY }} >> ~/.ssh/id_rsa
+          chmod 666 ~/.ssh/id_rsa
+          ssh-keyscan -M 127.0.1.1 >> ~/.ssh/known_hosts
+
+          cat ~/.ssh/known_hosts
