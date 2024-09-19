@@ -1,0 +1,16 @@
+name: Test_dos
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ls
+        run: |
+            echo "HOLA MUNDO" >> hola.txt
+            apt-get intall ngnx curl
