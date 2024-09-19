@@ -4,11 +4,12 @@ on: [push]
 
 jobs:
   others:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
+
     steps:
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v4.0.3
-    
-    - name: node version
-      run: node --version
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.0.3
+
+      - name: Node version
+        run: node --version
     
