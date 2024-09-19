@@ -3,15 +3,13 @@ name: CHECKOUT
 on: [push]
 
 jobs:
-  test-build:
-    runs-on: ubuntu-lastest
+  checkout:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4.1.7
-
-      - name: ls
-        run: |
-          chmod +x script.sh
-          ./script.sh
-    
+      - uses: actions/checkout@v4.1.7
+      - run: |
+          if [ -f "script.sh" ]; then
+            chmod +x script.sh
+            ./script.sh
+          fi
